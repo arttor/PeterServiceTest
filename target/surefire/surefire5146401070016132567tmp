@@ -1,0 +1,12 @@
+#surefire
+#Sat Aug 06 15:07:30 MSK 2016
+jpda.address=56108
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.0.2\\java\\maven-nblib\\netbeans-eventspy.jar
+file.encoding=UTF-8
+jpda.listen=true
+forkMode=once
+user.dir=D\:\\Work\\PeterServiceTest
+localRepository=C\:\\Users\\artem\\.m2\\repository
+test=com.peterService.peterServiceTest.WordIndexTest
+basedir=D\:\\Work\\PeterServiceTest
+maven.surefire.debug=-Xdebug -Xrunjdwp\:transport\=dt_socket,server\=n,address\=56108
