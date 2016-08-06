@@ -24,12 +24,12 @@ public class WordIndexTest {
     public void testLoadFile() {
         WordIndex wi = new WordIndex();
         wi.loadFile(filename);
-        Set<Integer> positions = wi.getIndexes4Word("Федот");
+        Set<Integer> positions = wi.getIndexes4Word("федот");
         assertNotNull(positions);
         Iterator<Integer> itr = positions.iterator();
         while (itr.hasNext()) {
-            String fedot = fileReader.readWord(filename, itr.next(), "Федот".length());
-            assertTrue("Федот".equals(fedot));
+            String fedot = fileReader.readWord(filename, itr.next(), "федот".length());
+            assertTrue("федот".equals(fedot.toLowerCase()));
         }
     }
 }
