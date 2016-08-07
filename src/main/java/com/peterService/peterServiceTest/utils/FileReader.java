@@ -19,6 +19,15 @@ import java.util.logging.Logger;
  */
 public class FileReader {
 
+    /**
+     * Метод для загрузки символов из файла с определенной позиции.
+     * Используется в тесте для проверки работы индексирования.
+     *
+     * @param filename имя файла
+     * @param wordPos позиция слова в файле
+     * @param wordLenght длина слова
+     * @return возвращает искомое слово
+     */
     public String readWord(String filename, int wordPos, int wordLenght) {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filename), WordIndex.ENCODING))) {
             char[] chars = new char[wordLenght];

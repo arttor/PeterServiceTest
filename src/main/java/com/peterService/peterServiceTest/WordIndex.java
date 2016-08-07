@@ -67,7 +67,7 @@ public class WordIndex {
                 StringBuilder sb = new StringBuilder();
                 sb.append(chars);
                 if (Character.isLetter(chars[chars.length - 1])) {
-                    int read = 0;
+                    int read;
                     while ((read = reader.read()) != -1) {
                         char ch = (char) read;
                         sb.append(ch);
